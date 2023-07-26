@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>sign up</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form method="post" action="/signup">
+        
+        <!-- Heading -->
+        <h4>
+            Create an account
+        </h4>
+
+        <!-- Subheading -->
+        <p >
+            Please fill up your information below to sign up.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" placeholder="..@.." required>
+            </div>
+        </div>
+         <!-- username -->
+        <div>
+            <label> username*</label>
+            <div>
+                <input type="text"  name="username" id="username" required>
+            </div>
+        </div>
+        <!-- first name -->
+        <div>
+            <label> first name*</label>
+            <div>
+                <input type="text"  name="first_name"  required>
+            </div>
+        </div>
+        <!-- last name -->
+        <div>
+            <label> last name*</label>
+            <div>
+                <input type="text"  name="last_name"  required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" placeholder="Min 6 chars" minlength="6">
+            </div>
+        </div>
+        
+
+     
+        
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+    <br>
+    <a href="/"><button>signin</button></a>
+</body>
+</html>

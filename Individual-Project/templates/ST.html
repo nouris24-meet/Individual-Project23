@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="static/js/js.js"></script>
+	<link href="static/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title>Spill the Tea</title>
+</head>
+<body>
+<!--upper buttons-->
+  <div class="container-fluid" class="vertical-center"  style="background-color:lightblue" >
+    <div class="row page"  >
+      <div class ="col-3"  style="background-color: #DCF9F9;"  > 
+       <h4>
+            ST page </h4>
+      </div>  
+      <div class="col-3">
+        <a href="/home">
+          <button class="btup" class="vertical-center">Home</button>
+        </a>  
+      </div>
+      <div class="col-3">
+        <a href="/chat">
+          <button>chats</button>
+        </a>  
+      </div>
+      <div class="col-3">
+        <a href="/profile">
+          <button>profile</button>
+        </a>  
+      </div>
+      
+    </div> <!-- /.row -->
+  </div>
+<form action="/ST" method="POST">
+    <div>
+    <label>Title</label>
+        <input type="text" name="title" placeholder="title" required>
+    </div>
+    <label>Description(optional)</label>
+        <input type="text" name="dis" placeholder="text" maxlength="280">
+    </div>
+    <br>
+    <div>
+    <label>Image(optional)</label>
+    	<input type="file" name="imgin" accept="image/jpeg, image/png, image/jpg">
+	<output></output>
+	</div>
+	<div>
+		<label for="url">Enter an https:// URL:</label>
+		<input type="url" name="url" id="url" placeholder="https://example.com"pattern="https://.*" size="30">
+	</div>
+    <button type="submit" >submit</button>
+</form>
+<a href="/ac_ST"><button>See some gossip!</button></a>
+
+</body>
+</html>
