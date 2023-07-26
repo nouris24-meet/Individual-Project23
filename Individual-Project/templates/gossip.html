@@ -16,7 +16,7 @@
     <div class="row page"  >
       <div class ="col-3"  style="background-color: #DCF9F9;"  > 
        <h4>
-           ' Profile page </h4>
+           ' Gossip page </h4>
       </div>  
       <div class="col-3">
         <a href="/home">
@@ -36,5 +36,12 @@
       
     </div> <!-- /.row -->
   </div>
+  {%for t in teas%}
+<h2>{{teas[t]['Title']}}</h2>
+<h2>{{teas[t]['Image']}}</h2>
+<h2>{{teas[t]['Discription']}}</h2>
+<h2>{{teas[t]['URL']}}</h2>
+
+{%endfor%}
 </body>
 </html>

@@ -123,13 +123,13 @@ def ST():
             print("Couldn't spill the tea")
     return render_template('ST.html')
 
-@app.route('/ac_ST')
-def ac_ST():
-    return render_template('ac_ST.html')
 
-@app.route('/profile')
-def profile():
-    return render_template('profile.html')
+
+
+@app.route('/gossip')
+def gossip():
+    teas=db.child('Tea').get().val()
+    return render_template('gossip.html', teas=teas)
 
 
 
